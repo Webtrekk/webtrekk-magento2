@@ -1,0 +1,18 @@
+<?php
+/**
+ * @author Webtrekk Team
+ * @copyright Copyright (c) 2016 Webtrekk GmbH (https://www.webtrekk.com)
+ * @package Webtrekk_TagIntegration
+ */
+?>
+<?php /** @var $this \Webtrekk\TagIntegration\Block\TICode **/ ?>
+<!-- Webtrekk TagIntegration -->
+<script type="text/javascript">
+	var webtrekkConfig = {
+		trackId: "111111111111111",
+		trackDomain: "q3.webtrekk.net",
+		safetag: <?php echo json_encode($this->getTagIntegrationConfig()) . "\n" ?>
+	};
+</script>
+<script type="text/javascript" src="<?php echo $this->getTrackingJSFileURL() ?>"></script>
+<!-- End Webtrekk TagIntegration -->
