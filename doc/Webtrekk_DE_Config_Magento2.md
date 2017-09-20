@@ -3,7 +3,7 @@ Integration und Konfiguration der Webtrekk Magento2 Extension | Version $version
 # Einführung
 
 Die Webtrekk Magento2 Extension ermöglicht Ihnen in eine einfache Integration des Webtrekk Pixels in Ihren 
-Magento2-Onlineshop. Jede Seite des Shops wird mit dem Webtrekk-Pixelcode (in der Version 4) versehen. Auf diese Weise 
+Magento2-Onlineshop. Jede Seite des Shops wird mit dem Webtrekk-Pixelcode (in der Version 5) versehen. Auf diese Weise 
 werden alle Standardparameter erfasst.
 
 Folgende Auswertungen sind damit möglich:
@@ -15,7 +15,7 @@ Folgende Auswertungen sind damit möglich:
 - Aktionsanalysen (mit Variante Link)
 - Formularanalysen (Aktivierung erforderlich)
 
-Entwickelt wurde die Extension für Magento2 v2.0.x und v2.1.x in Kombination mit dem Webtrekk Pixel in der Version 4 (D.h. 
+Entwickelt wurde die Extension für Magento2 v2.0.x und v2.1.x in Kombination mit dem Webtrekk Pixel in der Version 5 (D.h. 
 zusätzlich zu dem Magento2 Extension-Dateien benötigen Sie eine entsprechende JS-Datei des Pixels).
 
 Dieses Dokument gibt eine Übersicht über die gesetzten Werte auf den Einzelseiten und beschreibt die Einbindung der 
@@ -55,8 +55,6 @@ hinterlegen dort Ihre Basiskonfiguration.
 ![Alt Configuration](img/configuration.png)
 
 - **Enable Webtrekk TagIntegration:** Hier können Sie die Webtrekk Extension zusätzlich aktivieren bzw. deaktivieren.
-- **Webtrekk JavaScript file:** Hier können Sie den Pfad zur Webtrekk JavaScript Datei eintragen (/webtrekk_v4.min.js). Wenn Sie dieses Feld leer lassen, nutzt die Extension automatisch die in der Extension hinterlegte JavaScript Datei (Webtrekk Pixel v435).
-- **Async:** Legt fest, ob der TagIntegration-Container asynchron geladen werden soll.
 - **TagIntegration ID:** Tragen Sie hier Ihre TagIntegration Kunden-ID ein, wenn die TagIntegration Datei vom Webtrekk Server geladen werden soll.
 - **TagIntegration Domain:** Tragen Sie hier die TagIntegration Domain ein, wenn die TagIntegration Datei vom Webtrekk Server geladen werden soll.
 - **Custom Domain:** Tragen Sie hier Ihre Domain ein, wenn die TagIntegration Datei von Ihrem Server geladen werden soll.

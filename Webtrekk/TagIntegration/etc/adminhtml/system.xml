@@ -24,25 +24,6 @@
                         Here you can activate and deactivate the webtrekk extension.
                     </tooltip>
                 </field>
-				<field id="tracking_js_file" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Webtrekk JavaScript file</label>
-					<tooltip>
-                        The URL to the JavaScript which contains the tracking code (/webtrekk_v4.min.js). If that input stays empty the included default javascript file is used (Webtrekk Pixel v435).
-                    </tooltip>
-					<depends>
-                        <field id="*/*/enable">1</field>
-                    </depends>
-                </field>
-				<field id="async" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Async</label>
-					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <tooltip>
-                        Defines whether the TagIntegration container should be loaded asynchronously.
-                    </tooltip>
-					<depends>
-                        <field id="*/*/enable">1</field>
-                    </depends>
-                </field>
 				<field id="tagintegration_id" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>TagIntegration ID</label>
 					<tooltip>

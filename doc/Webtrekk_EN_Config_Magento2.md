@@ -3,7 +3,7 @@ Integration and Configuration of the Webtrekk Magento2 Extension | Version $vers
 # Introduction
 
 The Webtrekk Magento2 extension enables you to integrate the Webtrekk pixel into your Magento2 online shop simply and 
-quickly. In the process, the Webtrekk pixel code (Version 4) will be added to each page of your shop. This, in turn, 
+quickly. In the process, the Webtrekk pixel code (Version 5) will be added to each page of your shop. This, in turn, 
 ensures all standard parameters are configured.
 
 The following analyses will then be possible:
@@ -15,7 +15,7 @@ The following analyses will then be possible:
 - Action analyses
 - Form analyses
 
-The extension was developed for Magento v2.0.x und v2.1.x in combination with the Webtrekk pixel version 4. (i.e. you will 
+The extension was developed for Magento v2.0.x und v2.1.x in combination with the Webtrekk pixel version 5. (i.e. you will 
 need the corresponding pixel JS file and Webtrekk TagIntegration account in addition to the Magento2 extension).
 
 This document provides an overview of the values set on the individual pages and explains the integration of the extension 
@@ -54,8 +54,6 @@ After the installation is finished, go to "Stores > Configuration > Webtrekk > T
 ![Alt Configuration](img/configuration.png)
 
 - **Enable Webtrekk TagIntegration:** Here you can activate and deactivate the webtrekk extension.
-- **Webtrekk JavaScript file:** The URL to the JavaScript which contains the tracking code (/webtrekk_v4.min.js). If that input stays empty the included default javascript file is used (Webtrekk Pixel v435).
-- **Async:** Defines whether the TagIntegration container should be loaded asynchronously.
 - **TagIntegration ID:** Enter your TagIntegration customer ID here, if the TagIntegration file should be loaded from a Webtrekk server.
 - **TagIntegration Domain:** Enter the TagIntegration domain here, if the TagIntegration file should be loaded from a Webtrekk server.
 - **Custom Domain:** Enter your domain here, if the TagIntegration file should be loaded from your server.

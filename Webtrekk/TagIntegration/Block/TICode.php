@@ -29,15 +29,6 @@ class TICode extends Template
 		
         parent::__construct($context, $data);
     }
-
-	
-    /**
-     * @return string
-     */
-    public function getTrackingJSFileURL()
-	{
-        return $this->_tiHelper->getTrackingJSFileURL();
-    }
 	
 	
 	/**
