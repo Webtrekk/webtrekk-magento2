@@ -105,11 +105,17 @@ class Order extends AbstractData {
 			'shippingAmountTax' => $order->getShippingTaxAmount(),
 			'subtotal' => $order->getSubtotal(),
 			'subtotalInclTax' => $order->getSubtotalInclTax(),
-			'taxAmount' => $order->getTaxAmount(),
-			'payment' => $order->getPayment()->getData(),
-			'billing' => $order->getBillingAddress()->getData(),
-			'shipping' => $order->getShippingAddress()->getData()
+			'taxAmount' => $order->getTaxAmount()
 		);
+		if (!is_null($order->getPayment())) {
+            $transaction['payment'] = $order->getPayment()->getData();
+        }
+        if (!is_null($order->getBillingAddress())) {
+            $transaction['billing'] = $order->getBillingAddress()->getData();
+        }
+        if (!is_null($order->getShippingAddress())) {
+            $transaction['shipping'] = $order->getShippingAddress()->getData();
+        }
 		
 		$this->set('order', $transaction);
 	}
